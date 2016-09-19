@@ -1,33 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-    <!-- DEPENDENCES -->
-    <link rel='shortcut icon' href='images/jl-favicon.ico' type='image/x-icon'/ >
-    <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
-    <script src="https://use.fontawesome.com/37fae591b3.js"></script>
-    <script src="js/index.js"></script>
-  </head>
+  <title></title>
+  <!-- DEPENDENCES -->
+  <link rel='shortcut icon' href='images/jl-favicon.ico' type='image/x-icon'/ >
+  <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ -->  <script src="https://use.fontawesome.com/37fae591b3.js"></script>
+  <script src="js/index.js"></script>
   <body>
+    <div class="container-fluid">
+      <div class="section" id="home">
+        <img class="logo" src="images/jl-logo.png">
+        <p class="intro">Web Developer.</p><br>
 
-    <img class="logo" src="images/jl-logo.png" onmouseover="this.src='images/jl-logo-blue.png';" onmouseout="this.src='images/jl-logo.png';" alt="">
-    <p class="intro">Web Developer.</p><br>
-    <div class="triangle-position">
-      <div class="triangle blink"></div>
-    </div>
-    <div class="nav">
-      <a href="">BLOG</a><br><br>
-      <a href="">PROJECTS</a><br><br>
-      <a href="">ABOUT</a>
+        <div class="nav">
+          <div class="triangle-position">
+            <div class="triangle blink"></div>
+          </div>
+          <div class="links">
+            <a href="#home">HOME</a><br><br>
+            <a href="http://www.medium.com/joelachance">BLOG</a><br><br>
+            <a href="#projects">PROJECTS</a><br><br>
+            <a href="#about">ABOUT</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section projects" id="projects">
+        <h2>PROJECTS</h2>
+        <div class="image-container first-image">
+          <a href="https://github.com/fiveinfinity/stormyjs"><img class="project-image" src="images/stormy-project.png" alt=""></a>
+          <h4>Stormy</h4>
+          <p class="image-text">Software that renders weather for your trip at the time you're driving through.</p>
+          <p class="image-text">Node.js, Angular, Google Maps API, Dark Sky API, & Karma / Jasmine</p>
+          <p class="github"><i class="fa fa-github" aria-hidden="true"></i> <a target="_blank" href="https://github.com/fiveinfinity/stormyjs">Source on Github</a></p>
+
+        </div>
+        <div class="image-container">
+          <a href="https://angulargram.herokuapp.com/#/"><img class="project-image" src="images/angulargram-project.png" alt=""></a>
+          <h4>Angulargram</h4>
+          <p class="image-text">Social Media Photo Sharing site. Definitely not a clone of Instagram, in any way.</p>
+          <p class="image-text">Rails, Postgres, Angular, Devise, Paperclip, & Karma / Jasmine</p>
+          <p class="github"><i class="fa fa-github" aria-hidden="true"></i> <a target="_blank" href="https://github.com/fiveinfinity/angulargram">Source on Github</a></p>
+        </div>
+        <div class="image-container">
+          <a href="https://rubygems.org/gems/bnm"><img class="project-image" src="images/bnm-project.png" alt=""></a>
+          <h4>Pitchfork's Best New Music - Ruby Gem</h4>
+          <p class="image-text">A CLI to generate a sorted list of Pitchfork's Best New Music.</p>
+          <p class="image-text">Ruby, Nokogiri, Faraday, & Apple Music API</p>
+          <p class="github"><i class="fa fa-github" aria-hidden="true"></i> <a target="_blank" href="https://github.com/fiveinfinity/bnm-cli-gem">Source on Github</a></p>
+        </div>
+      </div>
+
+      <div class="section about-section" id="about">
+        <h2>ABOUT</h2>
+        <div class="about-text">
+
+          <br><br><hr><br>
+          Say hello: jlachance1@gmail.com <br>
+          Download my resume <a class="resume" href="documents/resume.pdf">here</a>. <br>
+          I live in the Twin Cities, Minnesota.
+          <br><br><hr><br>
+          <i class="fa fa-twitter" aria-hidden="true"></i> <a target="_blank" href="https://twitter.com/joelachance">Twitter</a><br>
+          <i class="fa fa-linkedin" aria-hidden="true"></i> <a target="_blank" href="https://www.linkedin.com/in/jlachance1">Linkedin</a><br>
+          <i class="fa fa-facebook" aria-hidden="true"></i> <a target="_blank" href="https://www.facebook.com/joe.lachance.56">Facebook</a><br>
+          <i class="fa fa-github" aria-hidden="true"></i> <a target="_blank" href="https://github.com/fiveinfinity">Github</a><br>
+        </div>
+            <img class="family" src="images/family.png" alt="">
+        <div class="footer">
+          <hr class="hr-bottom">
+          <p class="footer-text"><i class="fa fa-copyright blink" aria-hidden="true"></i> 2016 // JOE LACHANCE</p>
+        </div>
+      </div>
     </div>
 
-    <!-- FOOTER, DUH -->
-    <div class="footer">
-      <hr class="hr-bottom">
-      <p>MADE WITH <i class="fa fa-heart" aria-hidden="true" style="color: #F55;"></i> // JOE LACHANCE, <i class="fa fa-copyright" aria-hidden="true"></i> 2016.</p>
-    </div>
   </body>
 </html>

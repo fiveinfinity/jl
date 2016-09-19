@@ -6,9 +6,45 @@
 }
 
 body {
-  font-family: 'Orator';
+  font-family: 'Orator' !important;
   font-size: 16px;
+  color: #222;
 }
+
+.section {
+  height: 100vh;
+  min-width: 100%;
+  overflow: hidden;
+}
+
+.logo {
+  position: relative;
+  padding-top: 80px;
+  padding-left: 5px;
+  -webkit-animation: fadein 3s;
+  -o-animation: fadein 3s;
+  animation: fadein 3s;
+}
+
+.intro {
+  font-family: 'Droid Serif', serif;
+  font-size: 1.2em;
+  color: #222;
+  padding-left: 10px;
+  margin: 0px;
+  -webkit-animation: fadein 3s;
+  -o-animation: fadein 3s;
+  animation: fadein 3s;
+}
+
+.nav {
+  position: fixed;
+  z-index: 1;
+}
+
+/* .links a {
+  text-decoration: none !important;
+} */
 
 .triangle-position {
   padding-left: 10px;
@@ -36,12 +72,13 @@ body {
    transition-duration: 0.3s, 0.3s;
  }
 
- .nav {
+ .links {
    padding: 20px 10px 20px 10px;
    display: none;
+   text-decoration: none;
  }
 
- .nav.is-active {
+ .links.is-active {
    display: block;
    -webkit-animation: fadein 3s;
    -o-animation: fadein 3s;
@@ -49,16 +86,20 @@ body {
  }
 
  a {
+   text-decoration: none;
+ }
+
+.links a {
   position: relative;
   color: #000;
   text-decoration: none;
 }
 
-a:hover {
+.links a:hover {
   color: #000;
 }
 
-a:before {
+.links a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -73,35 +114,111 @@ a:before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-a:hover:before {
+.links a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
+h2 {
+  padding: 35px 150px;
+}
+
+h4 {
+  font-family: 'Muli', serif;
+}
+
+.photos {
+  left: 150px;
+  width: 100vw;
+  display: table;
+}
+
+.image-container {
+  width: 27%;
+  height: 55%;
+  display: inline-block;
+  padding: 100px 10px 10px 10px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid;
+}
+
+.first-image {
+  margin-left: 150px;
+}
+
+.image-text {
+  font-family: 'Muli', serif;
+  font-size: .9em;
+	line-height: 1.5em;
+	color: #777;
+  margin: 10px 0;
+}
+
+.github {
+  font-family: 'Muli', serif;
+  font-size: .8em;
+  color: #FF00FF;
+  margin: 10px 0;
+}
+
+.about-section {
+  position: relative;
+}
+
+.about-text {
+  font-family: 'Muli', serif;
+  font-size: .8em;
+  margin: 10px 0;
+  position: absolute;
+  top: 35%;
+  left: 150px;
+  right: 300px;
+}
+
+.about-text a {
+  color: #FF00FF;
+}
+
+.resume {
+  z-index: 1;
+}
+
+.family {
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 60px;
+}
+
+.footer-text {
+  margin-left: 30px;
+}
 
 .hr-bottom {
-  margin: 850px -20px 20px -20px;
+  margin: 0px -20px 20px -20px;
+  width: 130%;
   border: 0;
   border-top: 1px solid #c9c7c7;
 }
 
-.logo {
-  position: relative;
-  padding-top: 80px;
-  padding-left: 5px;
-}
 
-.intro {
-  font-family: 'Droid Serif', serif;
-  font-size: 1.2em;
-  color: #222;
-  padding-left: 10px;
-  margin: 0px;
-  -webkit-animation: fadein 3s;
-  -o-animation: fadein 3s;
-  animation: fadein 3s;
-}
+
+
 
 @keyframes fadein {
     from { opacity: 0; }
@@ -130,6 +247,7 @@ a:hover:before {
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+
 }
 
 @-webkit-keyframes blink {
