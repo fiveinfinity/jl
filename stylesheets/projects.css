@@ -1,0 +1,73 @@
+.projects {
+  margin-left: 10%;
+  width: 90%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.overflow {
+  overflow: auto;
+  width: 100%;
+  height: 70%;
+}
+
+#projects h2 {
+  padding-top: 35px;
+  padding-bottom: 5%;
+}
+
+@media only screen and (max-width: 2000px) {
+  .col-1 {
+    width: 31%;
+    float: left;
+    padding: 10px;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .col-1 {
+    width: 45%;
+    float: left;
+    padding: 10px;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .projects {
+    margin-left: 15%;
+    overflow: hidden;
+    width: 90%;
+    height: 100vh;
+  }
+
+  .col-1 {
+    width: 90%;
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    height: 100%;
+  }
+}
+
+.project-image {
+  max-width: 95%;
+  height: auto;
+  border: 1px solid;
+}
+
+.image-text {
+  font-family: 'Muli', serif;
+  font-size: .8em;
+	color: #777;
+  margin: 5px 0;
+}
+
+.github {
+  font-family: 'Muli', serif;
+  font-size: .8em;
+  color: #FF00FF;
+  margin: 10px 0;
+}

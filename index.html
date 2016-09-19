@@ -2,17 +2,23 @@
 <html>
   <title></title>
   <!-- DEPENDENCES -->
-  <link rel='shortcut icon' href='images/jl-favicon.ico' type='image/x-icon'/ >
-  <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+  <link rel='shortcut icon' href='images/jl-favicon.ico' type='image/x-icon'/>
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
- -->  <script src="https://use.fontawesome.com/37fae591b3.js"></script>
+  <script src="https://use.fontawesome.com/37fae591b3.js"></script>
+  <!-- CSS FILES -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/home.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/nav.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/projects.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/about.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/transitions.css">
+  <!-- JS FILES -->
   <script src="js/index.js"></script>
   <body>
-    <div class="container-fluid">
-      <div class="section" id="home">
+      <!-- HOME -->
+      <div id="home">
         <img class="logo" src="images/jl-logo.png">
         <p class="intro">Web Developer.</p><br>
 
@@ -28,34 +34,35 @@
           </div>
         </div>
       </div>
-
-      <div class="section projects" id="projects">
+      <!-- PROJECTS -->
+      <div class="projects clearfix" id="projects">
         <h2>PROJECTS</h2>
-        <div class="image-container first-image">
-          <a href="https://github.com/fiveinfinity/stormyjs"><img class="project-image" src="images/stormy-project.png" alt=""></a>
-          <h4>Stormy</h4>
-          <p class="image-text">Software that renders weather for your trip at the time you're driving through.</p>
-          <p class="image-text">Node.js, Angular, Google Maps API, Dark Sky API, & Karma / Jasmine</p>
-          <p class="github"><i class="fa fa-github" aria-hidden="true"></i> <a target="_blank" href="https://github.com/fiveinfinity/stormyjs">Source on Github</a></p>
-
-        </div>
-        <div class="image-container">
-          <a href="https://angulargram.herokuapp.com/#/"><img class="project-image" src="images/angulargram-project.png" alt=""></a>
-          <h4>Angulargram</h4>
-          <p class="image-text">Social Media Photo Sharing site. Definitely not a clone of Instagram, in any way.</p>
-          <p class="image-text">Rails, Postgres, Angular, Devise, Paperclip, & Karma / Jasmine</p>
-          <p class="github"><i class="fa fa-github" aria-hidden="true"></i> <a target="_blank" href="https://github.com/fiveinfinity/angulargram">Source on Github</a></p>
-        </div>
-        <div class="image-container">
-          <a href="https://rubygems.org/gems/bnm"><img class="project-image" src="images/bnm-project.png" alt=""></a>
-          <h4>Pitchfork's Best New Music - Ruby Gem</h4>
-          <p class="image-text">A CLI to generate a sorted list of Pitchfork's Best New Music.</p>
-          <p class="image-text">Ruby, Nokogiri, Faraday, & Apple Music API</p>
-          <p class="github"><i class="fa fa-github" aria-hidden="true"></i> <a target="_blank" href="https://github.com/fiveinfinity/bnm-cli-gem">Source on Github</a></p>
+        <div class="overflow">
+          <div class="col-1">
+            <a href="https://github.com/fiveinfinity/stormyjs"><img class="project-image" src="images/stormy-project.png" alt=""></a>
+            <h4>Stormy</h4>
+            <p class="image-text">Software that renders weather for your trip at the time you're driving through.</p>
+            <p class="image-text">Node.js, Angular, Google Maps API, Dark Sky API, & Karma / Jasmine</p>
+            <p class="github"><i class="fa fa-github" aria-hidden="true"></i> <a target="_blank" href="https://github.com/fiveinfinity/stormyjs">Source on Github</a></p>
+          </div>
+          <div class="col-1">
+            <a href="https://angulargram.herokuapp.com/#/"><img class="project-image" src="images/angulargram-project.png" alt=""></a>
+            <h4>Angulargram</h4>
+            <p class="image-text">Social Media Photo Sharing site. Definitely not a clone of Instagram, in any way.</p>
+            <p class="image-text">Rails, Postgres, Angular, Devise, Paperclip, & Karma / Jasmine</p>
+            <p class="github"><i class="fa fa-github" aria-hidden="true"></i> <a target="_blank" href="https://github.com/fiveinfinity/angulargram">Source on Github</a></p>
+          </div>
+          <div class="col-1">
+            <a href="https://rubygems.org/gems/bnm"><img class="project-image" src="images/bnm-project.png" alt=""></a>
+            <h4>Pitchfork's Best New Music - Ruby Gem</h4>
+            <p class="image-text">A CLI to generate a sorted list of Pitchfork's Best New Music.</p>
+            <p class="image-text">Ruby, Nokogiri, Faraday, & Apple Music API</p>
+            <p class="github"><i class="fa fa-github" aria-hidden="true"></i> <a target="_blank" href="https://github.com/fiveinfinity/bnm-cli-gem">Source on Github</a></p>
+          </div>
         </div>
       </div>
-
-      <div class="section about-section" id="about">
+      <!-- ABOUT -->
+      <div id="about">
         <h2>ABOUT</h2>
         <div class="about-text">
 
@@ -76,6 +83,5 @@
         </div>
       </div>
     </div>
-
   </body>
 </html>
