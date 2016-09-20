@@ -1,15 +1,7 @@
 #home {
   min-height: 100vh;
   height: 100vh;
-}
-
-.logo {
-  position: relative;
-  padding-top: 80px;
-  padding-left: 5px;
-  -webkit-animation: fadein 3s;
-  -o-animation: fadein 3s;
-  animation: fadein 3s;
+  padding: 1px;
 }
 
 .intro {
@@ -21,4 +13,26 @@
   -webkit-animation: fadein 3s;
   -o-animation: fadein 3s;
   animation: fadein 3s;
+}
+
+@media only screen and (max-width: 2000px) {
+  #home .logo {
+    position: relative;
+    padding-top: 80px;
+    padding-left: 5px;
+    -webkit-animation: fadein 3s;
+    -o-animation: fadein 3s;
+    animation: fadein 3s;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  #home .logo {
+    position: relative;
+    width: 30%;
+    height: auto;
+    -webkit-animation: fadein 3s;
+    -o-animation: fadein 3s;
+    animation: fadein 3s;
+  }
 }

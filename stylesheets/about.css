@@ -18,6 +18,22 @@
   right: 300px;
 }
 
+@media only screen and (max-width: 770px) {
+  #about h2 {
+    padding: 8% 5%;
+  }
+
+  .about-text {
+    font-family: 'Muli', serif;
+    font-size: .8em;
+    margin: 2% 0;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    right: 40%;
+  }
+}
+
 .about-text a {
   color: #FF00FF;
 }
@@ -31,8 +47,10 @@
   filter: alpha(opacity=65);
   position: absolute;
   right: 0;
-  bottom: 10%;
-  top: 10%;
+  bottom: 12%;
+  top: 8%;
+  width: auto;
+  height: 80%;
 }
 
 .footer {

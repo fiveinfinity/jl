@@ -3,6 +3,35 @@
   z-index: 1;
 }
 
+@media only screen and (min-width: 770px) {
+  #mobile-triangle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .nav {
+    display: none;
+  }
+
+  .mobile {
+    padding-left: 4%;
+  }
+
+  #mobile-triangle {
+    border-right: 4px solid;
+    border-bottom: 4px solid;
+    width: 10px; height: 10px;
+    transform: rotate(45deg);
+    color: #FFFF00;
+    -webkit-animation: blink 5s 1000 alternate;
+    -moz-animation: blink 5s 1000 alternate;
+    -ms-animation: blink 5s 1000 alternate;
+    -o-animation: blink 5s 1000 alternate;
+    animation: blink 5s 1000 alternate;
+  }
+}
+
 .triangle-position {
   padding-left: 10px;
 }

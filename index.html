@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <title></title>
-  <!-- DEPENDENCES -->
-  <link rel='shortcut icon' href='images/jl-favicon.ico' type='image/x-icon'/>
-  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="https://use.fontawesome.com/37fae591b3.js"></script>
-  <!-- CSS FILES -->
-  <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/home.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/nav.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/projects.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/about.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/transitions.css">
-  <!-- JS FILES -->
-  <script src="js/index.js"></script>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- DEPENDENCES -->
+    <link rel='shortcut icon' href='images/jl-favicon.ico' type='image/x-icon'/>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/37fae591b3.js"></script>
+    <!-- CSS FILES -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/home.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/nav.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/projects.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/about.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/transitions.css">
+    <!-- JS FILES -->
+    <script src="js/index.js"></script>
+  </head>
   <body>
       <!-- HOME -->
       <div id="home">
         <img class="logo" src="images/jl-logo.png">
         <p class="intro">Web Developer.</p><br>
 
+        <div class="mobile">
+          <div id="mobile-triangle"></div>
+        </div>
         <div class="nav">
           <div class="triangle-position">
             <div class="triangle blink"></div>
           </div>
           <div class="links">
             <a href="#home">HOME</a><br><br>
-            <a href="http://www.medium.com/joelachance">BLOG</a><br><br>
             <a href="#projects">PROJECTS</a><br><br>
-            <a href="#about">ABOUT</a>
+            <a href="#about">ABOUT</a><br><br>
+            <a href="http://www.medium.com/joelachance">BLOG</a>
           </div>
         </div>
       </div>
       <!-- PROJECTS -->
-      <div class="projects clearfix" id="projects">
+      <div class="projects" id="projects">
         <h2>PROJECTS</h2>
-        <div class="overflow">
           <div class="col-1">
             <a href="https://github.com/fiveinfinity/stormyjs"><img class="project-image" src="images/stormy-project.png" alt=""></a>
             <h4>Stormy</h4>
@@ -59,7 +63,6 @@
             <p class="image-text">Ruby, Nokogiri, Faraday, & Apple Music API</p>
             <p class="github"><i class="fa fa-github" aria-hidden="true"></i> <a target="_blank" href="https://github.com/fiveinfinity/bnm-cli-gem">Source on Github</a></p>
           </div>
-        </div>
       </div>
       <!-- ABOUT -->
       <div id="about">
